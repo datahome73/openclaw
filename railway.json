@@ -4,7 +4,7 @@
     "dockerfilePath": "Dockerfile"
   },
   "deploy": {
-    "startCommand": "node openclaw.mjs gateway --bind lan --allow-unconfigured",
+    "startCommand": "sudo chown -R node:node /home/node/.openclaw 2>/dev/null; chown -R node:node /home/node/.openclaw 2>/dev/null; node openclaw.mjs gateway --bind lan --allow-unconfigured",
     "healthcheckPath": "/healthz",
     "healthcheckTimeout": 120,
     "restartPolicyType": "ON_FAILURE",
