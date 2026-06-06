@@ -1,0 +1,12 @@
+{
+  // OpenClaw config for Railway deployment
+  // Uses DeepSeek as the primary provider via OpenAI-compatible env vars
+  agents: {
+    defaults: {
+      model: {
+        primary: "deepseek/deepseek-v4-flash",
+        fallbacks: ["deepseek/deepseek-chat"],
+      },
+    },
+  },
+}
