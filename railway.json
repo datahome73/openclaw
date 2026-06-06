@@ -4,7 +4,7 @@
     "dockerfilePath": "Dockerfile"
   },
   "deploy": {
-    "startCommand": "node openclaw.mjs gateway --bind lan --allow-unconfigured",
+    "startCommand": "echo 'ewogICJjaGFubmVscyI6IHsKICAgICJ0ZWxlZ3JhbSI6IHsKICAgICAgImVuYWJsZWQiOiB0cnVlLAogICAgICAiZG1Qb2xpY3kiOiAib3BlbiIsCiAgICAgICJhbGxvd0Zyb20iOiBbIioiXQogICAgfQogIH0sCiAgImdhdGV3YXkiOiB7CiAgICAiYmluZCI6ICJsYW4iLAogICAgImFsbG93VW5jb25maWd1cmVkIjogdHJ1ZQogIH0KfQo=' | base64 -d > /home/node/.openclaw/openclaw.json && node openclaw.mjs gateway --bind lan --allow-unconfigured",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
